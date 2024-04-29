@@ -1,0 +1,129 @@
+*{margin: 0px;padding: 0px;}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner{
+    width: 99.4%;
+    height: 812.53px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid red;
+
+}
+/*header*/
+header{
+    width: 100%;
+    height: 100px;
+    border: solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 1286px;
+    height: 41px;
+    border: purple solid 3px;
+}
+.navSec{
+    display: flex;
+    align-items: center;
+    height: 41px;
+    border: solid green;
+}
+#navLogo{
+    width: 185px;
+    border: green solid 2px;
+    gap: 5px;
+}
+#navLink{
+    width: 750px;
+}
+#navLink li{
+    border: solid red;
+    margin: -15px 30px;
+    padding: 4px;
+}
+.navSec ul,a{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    color: #000000; 
+    font-size: 21px;
+    padding: 6px;  
+}
+#navIcon {
+    width: 285px; 
+}
+
+#navIcon li{
+    border: solid red;
+    margin: -15px 14px;
+}
+
+/*info banner*/
+#bannerImage{
+    border: solid pink;
+     width: 100%;
+     height: 100%;
+     background: url(../img/scandinavian-interior-mockup-wall-decal-background\ 1.jpg) no-repeat center/cover;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end
+}
+
+#bannerInfo{
+    width: 643px;
+    height: 443px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-right: 80px;
+    background-color: #fff3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bannerInfoText {
+    width: 561px;
+    height: 344px;
+    font-family: "Poppins";
+}
+#bannerInfoText h3{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 24px; 
+}
+#bannerInfoText h1{
+    color:  #b88e2f;
+    font-weight: 700;
+    font-size: 52px; 
+    line-height:65px;
+}
+
+/*browse the range*/
+#browseRange{
+    border: solid blue;
+    width: 1183px;
+    height: 685px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.browseCards{
+    width: 381px;
+    height: 480px;
+    border: solid 3px;
+}
+
