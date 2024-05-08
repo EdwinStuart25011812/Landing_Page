@@ -7,7 +7,7 @@ body{
 }
 .banner{
     width: 99.4%;
-    max-height: 812.53px;
+    max-height: 850.53px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,15 +15,17 @@ body{
 
 }
 /*header*/
-header{
-    width: 100%;
-    height: 100px;
 
-}
 header, nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+header{
+    width: 100%;
+    max-height:150px;
+    
     
 }
 nav{
@@ -31,19 +33,25 @@ nav{
     max-width: 1286px;
     width: 100%;
     height: auto;
+    justify-content: space-evenly;
  
 }
 .navSec{
+    
     display: flex;
     align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
     height: 41px;
+
 }
 #navLogo{
-    width: 15%;
-    gap: 5px;
+    width: 150px;
+    
 }
 #navLink{
-    width: 60%;
+    width: 500px;
     position:relative;
     
 }
@@ -65,8 +73,7 @@ nav{
     padding: 6px; 
 }
 #navIcon {
-    width: 15%;
-    
+    width: 160px;
 }
 
 
@@ -78,7 +85,7 @@ nav{
 /*info banner*/
 #bannerImage{
      width: 100%;
-     height: 100%;
+     height: 600px;
      background: url(../img/scandinavian-interior-mockup-wall-decal-background\ 1.jpg) no-repeat center/cover;
      display: flex;
      align-items: center;
@@ -113,6 +120,10 @@ nav{
     font-size: 52px; 
     line-height:65px;
 }
+#bannerInfoText button{ 
+    font-family: "Poppins",sans-serif;font-weight: 700; font-size: 16px; color: white; background-color:  #b88e2f; line-height:24px ;width: 222px;height: 74px; margin-top: 15px; border-radius: 5px;
+     
+ }
 
 /*browse the range*/
 #browseRange{
@@ -204,6 +215,8 @@ nav{
     justify-content: center;
     font-family: "Poppins";
     background-color: #fbf1e6;
+    
+ 
 }
 #inspirationsInfo{
     width: 25%;
@@ -213,6 +226,8 @@ nav{
     align-items: start;
     justify-content: center;
     text-align: start;
+
+    flex-wrap: wrap;
 }
 #inspirationsInfo h2{
     font-weight: 700;
@@ -228,6 +243,7 @@ nav{
 }
 #inspirationsInfo button{
     width: 176px;
+ 
     height: 48px;
     margin-top: 15px;
     font-weight: 600;
@@ -244,8 +260,7 @@ nav{
     height: 582px;
     display: flex;
     align-items: center;
-    justify-content: center;
-     
+    justify-content: center; 
 }
 
 .slide-container{
@@ -355,7 +370,7 @@ footer {
   /* Footer columns */
   
   .footer-col {
-    flex: 1; /* Make each footer column take up 1/4th of the space */
+    flex: 1; 
     margin-bottom: 20px;
   }
   
@@ -405,20 +420,76 @@ footer {
   border-bottom: 0; /* Remove bottom border */
   border-left: 0; /* Remove left border */
   }
+
     /* Responsive adjustments */
   
-    @media (max-width: 768px) {
-        /*footer*/
-        .footer-col {
-          flex: 1 1 50%;  /* Make each footer column take up 1/2 of the space on smaller screens */
-        }
-      
-    }
+ 
+
     
       @media (max-width: 480px) {
         .footer-col {
           flex: 1;  /* Make each footer column take up 100% of the space on very small screens */
         }
+
         
+    }
+    
+    @media (max-width: 768px) {
+        /*footer*/
+        .footer-col, #inspirationsInfo button, #inspirationsInfo h2,#inspirationsInfo p, #bannerInfo{
+            transition-duration: 1.5s;
+        }
+        .footer-col {
+          flex: 1 1 50%;  /* Make each footer column take up 1/2 of the space on smaller screens */
+        }
+        #bannerInfo{
+            width: 245px;
+            height: 443px;            
+        }
+        #bannerInfoText {
+            width: 245px;
+            height: 344px;
+          
+        }
+        #bannerInfoText h3{
+            font-weight: 600;
+            font-size: 15px;
+ 
+            
+        }
+        #bannerInfoText h1{
+           font-size: 35px;
+           line-height: 24px; 
+            
+        }
+        #bannerInfoText p{
+            font-size: 13px;
+            
+             
+         }
+         #bannerInfoText button{ 
+            font-size: 14px;
+            width: 210px;
+            height: 60px;
+             
+         }
+        #inspirationsInfo button{
+            width: 120px;
+            
+        }
+        #inspirationsInfo h2{
+            font-size: 27px;
+            line-height: 28px;
+            
+           
+        }
+        #inspirationsInfo p{
+            margin-top: 15px;
+
+        }
         
-      }
+    }
+
+
+        
+      
